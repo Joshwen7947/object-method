@@ -1,1 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+.section {
+	border: 2px solid;
+	padding: 20px;
+	h1 {
+		text-decoration: underline;
+	}
+	p {
+		padding: 10px 0;
+		font-weight: 400;
+	}
+	h3 {
+		font-weight: 100;
+	}
+}

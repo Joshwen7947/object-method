@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section {
+  border: 2px solid;
+  padding: 20px;
+}
+
+.section h1 {
+  text-decoration: underline;
+}
+
+.section p {
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+.section h3 {
+  font-weight: 100;
+}
+/*# sourceMappingURL=styles.css.map */

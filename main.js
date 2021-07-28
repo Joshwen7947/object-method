@@ -93,8 +93,42 @@ let sortFirstBasedOnLength = firstName.sort((a, b) => a.length - b.length);
 document.getElementById('3.8').innerHTML = sortFirstBasedOnLength;
 let sortLastBasedOnLength = lastName.sort((a, b) => a.length - b.length);
 document.getElementById('3.9').innerHTML = sortLastBasedOnLength;
-// REDUCE ~ reduce to min output
-// SOME
-// INCLUDES
-// EVERY
-// FOREACH
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+const betterProgrammersWithL = programmers.filter((bar) => bar.startsWith('L'));
+document.getElementById('4.0').innerHTML = betterProgrammersWithL;
+
+const betterProgrammersWithT = programmers.filter((bar) => bar.startsWith('T'));
+document.getElementById('4.1').innerHTML = betterProgrammersWithT;
+
+// const betterProgrammersLessThanFour = programmers.sort(
+// 	(a, b) => a.split(' ')[0].length - b.split(' ')[0].length
+// );
+const betterProgrammersLessThanFour = firstName.filter(function (firstName) {
+	return firstName.length <= 4;
+});
+// console.log(betterProgrammersLessThanFour);
+document.getElementById('4.2').innerHTML = betterProgrammersLessThanFour;
+
+const moreThanFour = firstName.filter(function (firstName) {
+	return firstName.length > 4;
+});
+document.getElementById('4.3').innerHTML = moreThanFour;
+
+const greaterThan8 = programmers.filter(function (programmers) {
+	return programmers.length > 8;
+});
+document.getElementById('4.4').innerHTML = greaterThan8;
+
+const lessThan8 = programmers.filter(function (programmers) {
+	return programmers.length <= 8;
+});
+document.getElementById('4.5').innerHTML = lessThan8;
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+const kAndN = lastName.filter(function (lastName) {
+	return lastName.startsWith('K');
+});
+console.log(kAndN);
