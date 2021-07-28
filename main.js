@@ -47,7 +47,7 @@ function programmerFirstName(e) {
 	console.log('First Name:', e);
 	return e.split(' ')[0];
 }
-let firstName = programmers.map(programmerFirstName);
+const firstName = programmers.map(programmerFirstName);
 document.getElementById('3.1').innerHTML = firstName;
 
 function programmerLastName(e) {
@@ -87,6 +87,12 @@ function alphaLastName(e) {
 }
 let lastNameAlpha = programmers.map(programmerLastName).sort();
 document.getElementById('3.7').innerHTML = lastNameAlpha;
+
+// SORT NAME BASED ON LENGTH
+let sortFirstBasedOnLength = firstName.sort((a, b) => a.length - b.length);
+document.getElementById('3.8').innerHTML = sortFirstBasedOnLength;
+let sortLastBasedOnLength = lastName.sort((a, b) => a.length - b.length);
+document.getElementById('3.9').innerHTML = sortLastBasedOnLength;
 // REDUCE ~ reduce to min output
 // SOME
 // INCLUDES
